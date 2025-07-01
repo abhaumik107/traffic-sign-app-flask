@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: traffic-sign-app
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: PORT
+        value: 10000
